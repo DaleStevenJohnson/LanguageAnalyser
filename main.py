@@ -30,8 +30,6 @@ def read_file(filename):
         text = file.read()
     return text
 
-
-
 def count_letters(text):
     text = list(text)
     letters = {"counts":{}, "percents":{}}
@@ -84,7 +82,6 @@ def print_result(result):
     percentspace = " " * (len(headings[2]) - len(percent))
     output += template.format(total, totalspace, count, countspace, percent, percentspace)
     print(output)
-
 
 def main():
     filepaths = get_file_paths("texts")
